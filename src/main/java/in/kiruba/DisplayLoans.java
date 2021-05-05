@@ -15,7 +15,7 @@ public class DisplayLoans {
 		listOfLoans.add("---Veicle Loan---");
 		
 	}
-	public static void Display() {
+	public static void display() {
 		for(String displayloans:listOfLoans) {
 			System.out.println(displayloans);
 		}

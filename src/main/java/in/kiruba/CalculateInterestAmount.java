@@ -7,7 +7,7 @@ public class CalculateInterestAmount {
 	 * @param amount
 	 * @return
 	 */
-	public static int HouseLoan(int amount) {
+	public static int houseLoan(int amount) {
 		int interestamount=0;
 		if(amount==1000000) {
 			 interestamount=(amount*2)/100;
@@ -22,12 +22,12 @@ public class CalculateInterestAmount {
 	return interestamount;
 	}
 	/**
-	 * 
+	 * calculate interest amount for Education loan
 	 * @param amount
 	 * @return
 	 */
 	
-	public static int CalculationofEducation(int amount) {
+	public static int calculationOfEducation(int amount) {
 		int interestamount=0;
 		if(amount<=150000) {
 			interestamount=(amount*1)/100;
@@ -36,7 +36,13 @@ public class CalculateInterestAmount {
 		
 		
 	}
-	public static int CalculationOfAgriculture(int acre,int amount) {
+	/**
+	 * calculate interest amount for Agricultureloan
+	 * @param acre
+	 * @param amount
+	 * @return
+	 */
+	public static int calculationOfAgriculture(int acre,int amount) {
 		int interestamount=0;
 		
 		if((acre<=3) && (amount<=200000)) {
@@ -58,7 +64,13 @@ public class CalculateInterestAmount {
 		}return interestamount;
 		
 	}
-	public static int CalculationofGold(String goldtype,int quantityofgold) {
+	/**
+	 * calculate interest Amount for goldloan
+	 * @param goldtype
+	 * @param quantityofgold
+	 * @return
+	 */
+	public static int calculationofGold(String goldtype,int quantityofgold) {
 		int interestamount=0;
 		
 		if(goldtype=="22k") {
@@ -72,14 +84,20 @@ public class CalculateInterestAmount {
 		//return amount;
 		return interestamount;
 	}
-	public static int CalculationofVeicle(String vehicletype,int amount) {
+	/**
+	 * calculate interest Amount for vehicle loan
+	 * @param vehicletype
+	 * @param amount
+	 * @return
+	 */
+	public static int calculationOfVeicle(String vehicletype,int amount) {
 		int interestamount=0;
-		//System.out.println(vehicletype +amount);
+		
 		if((vehicletype=="twoWheeler") && (amount>=50000 && amount<=200000))
 			{
-			//System.out.println("hii");
+			
 				interestamount=(amount*2)/100;
-				//System.out.println("INT" + interestamount);
+				
 			}
 		else if(vehicletype=="fourWheeler" && amount>200000 && amount<1000000) {
 					interestamount=(amount*4)/100;

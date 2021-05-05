@@ -4,12 +4,12 @@ public class User {
 	//declare variables
 	
 
-	public   String Username;
-	public  String Password;
-	public  long MobileNo;
+	public   String username;
+	public  String password;
+	public  long mobileNo1;
 	public String name;
 	public String fatherName;
-	public int Age;
+	public int age;
 	public long mobileNo;
 	public String email;
 	public String address;
