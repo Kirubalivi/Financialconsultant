@@ -6,7 +6,7 @@ public class User {
 
 	public   String username;
 	public  String password;
-	public  long mobileNo1;
+	private  long mobileNo1;
 	public String name;
 	public String fatherName;
 	public int age;
@@ -15,4 +15,12 @@ public class User {
 	public String address;
 	public String gender;
 	public long adharNo;
+	
+	
+	public long getMobileNo1() {
+		return mobileNo1;
+	}
+	public void setMobileNo1(long mobileNo1) {
+		this.mobileNo1 = mobileNo1;
+	}
 }

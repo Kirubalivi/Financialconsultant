@@ -1,9 +1,11 @@
 package in.kiruba;
-import java.util.*;
 public class CalculateInterestAmount {
-	public static int amount;
+	
 	/**
 	 * Calculate Interest Amount for house loan
+	 * 10L-2%
+	 * 25L-3%
+	 * 50L-5%
 	 * @param amount
 	 * @return
 	 */
@@ -37,7 +39,7 @@ public class CalculateInterestAmount {
 		
 	}
 	/**
-	 * calculate interest amount for Agricultureloan
+	 * calculate interest amount for AgricultureLoan
 	 * @param acre
 	 * @param amount
 	 * @return
@@ -71,13 +73,13 @@ public class CalculateInterestAmount {
 	 * @return
 	 */
 	public static int calculationofGold(String goldtype,int quantityofgold) {
-		int interestamount=0;
+		int interestamount=0,amount;
 		
-		if(goldtype=="22k") {
+		if(goldtype.equals("22k")) {
 			amount=(quantityofgold*4380);
 			interestamount=(amount*1)/100;
 		}
-		else if(goldtype=="24k") {
+		else if(goldtype.equals("24k")) {
 			amount=(quantityofgold*4599);
 			interestamount=(amount*1)/100;
 		}
@@ -93,13 +95,13 @@ public class CalculateInterestAmount {
 	public static int calculationOfVeicle(String vehicletype,int amount) {
 		int interestamount=0;
 		
-		if((vehicletype=="twoWheeler") && (amount>=50000 && amount<=200000))
+		if((vehicletype.equals("twoWheeler") && amount>=50000 && amount<=200000))
 			{
 			
 				interestamount=(amount*2)/100;
 				
 			}
-		else if(vehicletype=="fourWheeler" && amount>200000 && amount<1000000) {
+		else if(vehicletype.equals("fourWheeler") && amount>200000 && amount<1000000) {
 					interestamount=(amount*4)/100;
 			}
 			

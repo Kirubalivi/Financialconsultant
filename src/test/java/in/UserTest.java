@@ -2,15 +2,9 @@ package in;
 
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
-
 import org.junit.Test;
 
-import in.kiruba.CalculateInterestAmount;
-import in.kiruba.CheckAmountPaid;
 import in.kiruba.DisplayLoans;
-import in.kiruba.LoanApplication;
-import in.kiruba.User;
 import in.kiruba.UserManager;
 
 public class UserTest {
@@ -27,22 +21,32 @@ public class UserTest {
 		assertTrue(isValid);
 
 	}
-
-	/**
-	 * it test for correct information
-	 */
 	@Test
-	public void testWithCorrectInfo() {
-		String name = "kiruba";
+	public void testWithCorrectLogin() {
+		String name = " kiruba";
 		String password = "livi";
 		Long mobileNo = 9012345678L;
-		boolean isValid = UserManager.validLogin(name, password, mobileNo);
+		boolean isValid = UserManager.validLoginDetails(name, password,mobileNo);
+		
 
 		assertTrue(isValid);
 	}
 
+//	/**
+//	 * it test for correct information
+//	 */
+//	@Test
+//	public void testWithCorrectInfo() {
+//		String name = "kiruba";
+//		String password = "livi";
+//		Long mobileNo = 9012345678L;
+//		boolean isValid = UserManager.validLogin(name, password, mobileNo);
+//
+//		assertTrue(isValid);
+//	}
+
 	@Test
-	/** it test for Incorrectinformation
+	/** it test for InCorrectInformation
 	 * 
 	 */
 
@@ -57,7 +61,7 @@ public class UserTest {
 
 	@Test
 	/**
-	 * Dispaly the Loans
+	 * Display the Loans
 	 */
 
 	public void validDisplay() {

@@ -77,7 +77,6 @@ public class ValidInterestAmount {
 	 * check InterestAmount for goldLoan
 	 */
 	public void test1GoldLoan() {
-		int amount=4380;
 		String gram="22k";
 		int Gram=8;
 		int interest=CalculateInterestAmount.calculationofGold(gram,Gram);
@@ -85,7 +84,6 @@ public class ValidInterestAmount {
 	}
 	@Test
 	public void test2GoldLoan() {
-		int amount=4599;
 		String gram="24k";
 		int Gram=8;
 		int interest=CalculateInterestAmount.calculationofGold(gram,Gram);
@@ -96,8 +94,7 @@ public class ValidInterestAmount {
 	 * valid InterestAmount for vehicle loan
 	 */
 	public void test1VeicleLoan() {
-		//int amount=150000;
-		//String veicleType="twoWheeler";
+		
 		int interest=CalculateInterestAmount.calculationOfVeicle("twoWheeler",150000);
 		assertEquals(3000,interest);
 	}

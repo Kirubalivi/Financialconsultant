@@ -20,14 +20,14 @@ public class ValidLoanApplication {
 		String address="1/2442,sakthinagar,coimbatore";
 		String email="kirubarangaraj15@gmail.com";
 		String gender="female";
-		//boolean isValid=LoanApplication.displayLoans(name, FatherName,age,gender,email,mobileno,adharno,address);
+		//boolean isValid=LoanApplication.displayLoans(name, FatherName,age,gender,email,mobileNo,adharNo,address);
 		boolean isValid = LoanApplication.validDiplayApplicationForm(name, FatherName,age,gender,email,mobileno,adharno,address);
-		System.out.println(isValid);
+		//System.out.println(isValid);
 		assertTrue(isValid);
 	}
 	@Test
 	/**
-	 * valid user incorrect details in Loanapplication
+	 * valid user incorrect details in LoanApplication
 	 */
 	public void testWithInCorrectDetails() {
 		String name = "kiruba";
@@ -38,7 +38,7 @@ public class ValidLoanApplication {
 		String address="1/2442,sakthinagar,coimbatore";
 		String email="kirubarangaraj15@gmail.com";
 		String gender="female";
-		//boolean isValid=LoanApplication.displayLoans(name, FatherName,age,gender,email,mobileno,adharno,address);
+		//boolean isValid=LoanApplication.displayLoans(name, FatherName,age,gender,email,mobilenNo,adharNo,address);
 		boolean isValid = LoanApplication.validDiplayApplicationForm(name, FatherName,age,gender,email,mobileno,adharno,address);
 		//System.out.println(isValid);
 		assertFalse(isValid);

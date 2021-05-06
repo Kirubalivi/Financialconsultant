@@ -3,6 +3,9 @@ package in.kiruba;
 import java.util.ArrayList;
 
 public class LoanApplication {
+	/*
+	 * create a arrayList and adding users Details
+	 */
 	  static ArrayList<User> detailLists=new ArrayList<User>();
 	  static {
 		  User user5=new User();
@@ -18,17 +21,17 @@ public class LoanApplication {
 		  
 	  }
 	  
-	 /**
-	  * add details into ArrayList using user4 object
-	  * @param name
-	  * @param fatherName1
-	  * @param age
-	  * @param gender1
-	  * @param email1
-	  * @param mobileNo1
-	  * @param adharNo1
-	  * @param address1
-	  */
+//	 /**
+//	  * add details into ArrayList using user4 object
+//	  * @param name
+//	  * @param fatherName1
+//	  * @param age
+//	  * @param gender1
+//	  * @param email1
+//	  * @param mobileNo1
+//	  * @param adharNo1
+//	  * @param address1
+//	  */
 //	  public static boolean displayLoans (String name1,String fatherName1,int age,String gender1,String email1,long mobileNo1,long adharNo1,String address1) {
 //		 boolean isExists1=false;
 //		  User user4=new User();
@@ -49,7 +52,7 @@ public class LoanApplication {
 	 // }
 	  
 	  /**
-	   * Valid Details are Correct
+	   * Valid Details are Correct or not
 	   * @param name
 	   * @param FatherName
 	   * @param age
@@ -66,7 +69,7 @@ public class LoanApplication {
 	 
 		 for(User lists:detailLists) {
 			 //System.out.println(lists.name+lists.fatherName+lists.Age+lists.gender+lists.email+lists.mobileNo+lists.adharNo+lists.address);
-			 //System.out.println(FatherName);
+			
 			 if(lists.name.equalsIgnoreCase(name) && lists.fatherName.equalsIgnoreCase(FatherName)&&lists.age==age&&lists.gender.equalsIgnoreCase(gender)&&lists.email.equalsIgnoreCase(email)&&lists.mobileNo==mobileno&&lists.adharNo==adharno&&lists.address.equalsIgnoreCase(address)) {
 			isExists=true; 
 			 

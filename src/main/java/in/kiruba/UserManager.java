@@ -3,6 +3,9 @@ package in.kiruba;
 import java.util.ArrayList;
 
 public class UserManager {
+	/*
+	 * create a arrayList and adding users Details
+	 */
 
 	static ArrayList<User> userlists = new ArrayList<User>();
 
@@ -10,33 +13,50 @@ public class UserManager {
 		User user2 = new User();
 		user2.username = "priya";
 		user2.password = "kiru";
-		user2.mobileNo1 = 8012009883L;
+		user2.setMobileNo1(8012009883L);
 		userlists.add(user2);
 
 		User user1 = new User();
 		user1.username = "kiruba";
 		user1.password = "livi";
-		user1.mobileNo1= 9012345678L;
+		user1.setMobileNo1(9012345678L);
 		userlists.add(user1);
 
 	}
 
-	// show the userlists
+	/*show the Userlists*/
 	public static void showUser() {
 		for (User user : userlists) {
-			System.out.println(user.username + " " + user.password + " " + user.mobileNo1);
+			System.out.println(user.username + " " + user.password + " " + user.getMobileNo1());
 
 		}
 
+	}/*
+	validation for users Details
+	*/
+	public static boolean validLoginDetails(String username,String password,long mobileno) {
+		boolean isValid=false;
+		username=username.trim();
+		 
+			if((username!=null && username.length()>=5) && (password.length()>=4)&& (mobileno>0)) {
+				
+				
+				isValid=validLogin(username,password,mobileno);
+				
+			}
+		return isValid;
 	}
 
-	// validate the logindetails
+	
 	public static boolean validLogin(String username, String password, long mobileno) {
 		boolean isExist = false;
 		for (User user : userlists) {
 			// System.out.println(user.Username+ " " + user.Password+ " " + user.MobileNo);
 			if (user.username.equalsIgnoreCase(username) && (user.password.equals(password))
-					&& (user.mobileNo1 == mobileno)) {
+					&& (user.getMobileNo1() == mobileno)) {
+				System.out.println(user.username+user.getMobileNo1()+user.password);
+				
+				System.out.println("hello");
 				isExist = true;
 
 				// System.out.println("Successfully Login");
@@ -62,7 +82,7 @@ public class UserManager {
 		User user3 = new User();
 		user3.username = username;
 		user3.password = password;
-		user3.mobileNo1 = mobileno;
+		user3.setMobileNo1(mobileno);
 		// System.out.println(user3.Username);
 		userlists.add(user3);
 		return true;
