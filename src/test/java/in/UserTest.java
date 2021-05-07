@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import in.kiruba.DisplayLoans;
+import in.kiruba.DisplayloansLists;
 import in.kiruba.UserManager;
 
 public class UserTest {
@@ -58,14 +58,21 @@ public class UserTest {
 		assertFalse(isValid);
 
 	}
-
 	@Test
-	/**
-	 * Display the Loans
-	 */
+	public void testUserLists() {
+		
+		boolean isValid=UserManager.displayUserLists();
+		assertTrue(isValid);
+	}
 
+
+	/**
+	 * test for Displaying the Loans
+	 */
+	@Test
 	public void validDisplay() {
-		DisplayLoans.display();
+           DisplayloansLists.display();
+	
 
 	}
 	

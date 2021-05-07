@@ -16,12 +16,12 @@ public class ValidLoanApplication {
 		String FatherName = "rangaraj";
 		Long mobileno = 9025967216L;
 		int age=21;
-		long adharno=3089123423456789l;
+		long aadhaarno=3089123423456789l;
 		String address="1/2442,sakthinagar,coimbatore";
 		String email="kirubarangaraj15@gmail.com";
 		String gender="female";
 		//boolean isValid=LoanApplication.displayLoans(name, FatherName,age,gender,email,mobileNo,adharNo,address);
-		boolean isValid = LoanApplication.validDiplayApplicationForm(name, FatherName,age,gender,email,mobileno,adharno,address);
+		boolean isValid = LoanApplication.validDiplayApplicationForm(name, FatherName,age,gender,email,mobileno,aadhaarno,address);
 		//System.out.println(isValid);
 		assertTrue(isValid);
 	}
@@ -34,12 +34,12 @@ public class ValidLoanApplication {
 		String FatherName = "livi";
 		Long mobileno = 9025967216L;
 		int age=21;
-		long adharno=3089123423456789l;
+		long aadhaarno=3089123423456789l;
 		String address="1/2442,sakthinagar,coimbatore";
 		String email="kirubarangaraj15@gmail.com";
 		String gender="female";
 		//boolean isValid=LoanApplication.displayLoans(name, FatherName,age,gender,email,mobilenNo,adharNo,address);
-		boolean isValid = LoanApplication.validDiplayApplicationForm(name, FatherName,age,gender,email,mobileno,adharno,address);
+		boolean isValid = LoanApplication.validDiplayApplicationForm(name, FatherName,age,gender,email,mobileno,aadhaarno,address);
 		//System.out.println(isValid);
 		assertFalse(isValid);
 	

@@ -19,6 +19,15 @@ public class ValidAmountPaidOrNot {
 		
 
 	}
+	@Test
+	public void testAmountPaidForYears() {
+		int amount=600000;
+		int lineAmount=50000;
+		boolean isValid=CalculateLineAmount.amountPaidOrNot(amount,lineAmount);
+		assertFalse(isValid);
+		
+
+	}
 
 	
 

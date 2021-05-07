@@ -1,10 +1,10 @@
-package in.kiruba;
+package in;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import in.kiruba.CheckAmountPaidOrNot;
+import in.kiruba.CalculateLineAmount;
 
 public class ValidAmountPaidOrNot {
 	@Test

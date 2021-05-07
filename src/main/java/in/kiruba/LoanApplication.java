@@ -15,7 +15,7 @@ public class LoanApplication {
 		  user5.gender="female";
 		  user5.email="kirubarangaraj15@gmail.com";
 		  user5.mobileNo=9025967216l;
-		  user5.adharNo=3089123423456789l;
+		  user5.aadhaarNo=3089123423456789l;
 		  user5.address="1/2442,sakthinagar,coimbatore";
 		  detailLists.add(user5);
 		  
@@ -70,7 +70,7 @@ public class LoanApplication {
 		 for(User lists:detailLists) {
 			 //System.out.println(lists.name+lists.fatherName+lists.Age+lists.gender+lists.email+lists.mobileNo+lists.adharNo+lists.address);
 			
-			 if(lists.name.equalsIgnoreCase(name) && lists.fatherName.equalsIgnoreCase(FatherName)&&lists.age==age&&lists.gender.equalsIgnoreCase(gender)&&lists.email.equalsIgnoreCase(email)&&lists.mobileNo==mobileno&&lists.adharNo==adharno&&lists.address.equalsIgnoreCase(address)) {
+			 if(lists.name.equalsIgnoreCase(name) && lists.fatherName.equalsIgnoreCase(FatherName)&&lists.age==age&&lists.gender.equalsIgnoreCase(gender)&&lists.email.equalsIgnoreCase(email)&&lists.mobileNo==mobileno&&lists.aadhaarNo==adharno&&lists.address.equalsIgnoreCase(address)) {
 			isExists=true; 
 			 
 			 }

@@ -25,13 +25,15 @@ public class UserManager {
 	}
 
 	/*show the Userlists*/
-	public static void showUser() {
+	public static boolean displayUserLists() {
 		for (User user : userlists) {
-			System.out.println(user.username + " " + user.password + " " + user.getMobileNo1());
+			System.out.println(user.username+" "+user.password);
+		}
+			return true;
 
 		}
 
-	}/*
+	/*
 	validation for users Details
 	*/
 	public static boolean validLoginDetails(String username,String password,long mobileno) {
@@ -92,11 +94,9 @@ public class UserManager {
 	public static void main(String[] args) {
 
 		newUserRegistration("kavi", "karthika", 1234567890L);
-		showUser();
-
-		validLogin("kavi", "karthika", 1234567890L);
 		
-		//DisplayLoans.display();
+
+		
 
 		
 	}

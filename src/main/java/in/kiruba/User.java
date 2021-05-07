@@ -1,5 +1,6 @@
 package in.kiruba;
 
+
 public class User {
 	//declare variables
 	
@@ -14,7 +15,8 @@ public class User {
 	public String email;
 	public String address;
 	public String gender;
-	public long adharNo;
+	public long aadhaarNo;
+
 	
 	
 	public long getMobileNo1() {
